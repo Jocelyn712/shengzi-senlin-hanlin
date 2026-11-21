@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>家長使用說明｜小熊的生字森林（翰林版）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+/* 給家長看的一頁說明。版面：單欄、三個步驟卡片，跟遊戲同一套森林綠＋蜂蜜黃。 */
+:root{
+  --bg:#EDF3EA; --surface:#FFFFFF; --surface2:#F6FAF4;
+  --ink:#1C3025; --muted:#5E7465; --line:#D4E2D0;
+  --accent:#2E7D4F; --accent-soft:#D8EEDF;
+  --honey:#E09A2E; --honey-soft:#FBEBCF;
+  --berry:#CE524A; --berry-soft:#FADEDB;
+  --font:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#131B16; --surface:#1C2721; --surface2:#222E27;
+  --ink:#E7F0E8; --muted:#95AC9C; --line:#31423A;
+  --accent:#5FBF84; --accent-soft:#1E3A2A;
+  --honey:#F0B45C; --honey-soft:#3A2E18;
+  --berry:#E8776E; --berry-soft:#3D2320;
+  color-scheme:dark;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 var(--font)}
+.wrap{max-width:640px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:16px}
+h1{font-size:26px;font-weight:900;margin:4px 0 0;text-wrap:balance}
+.lead{color:var(--muted);margin:0}
+.card{background:var(--surface);border:2px solid var(--line);border-radius:18px;padding:18px 20px}
+.card h2{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:900;margin:0 0 8px}
+.card h2 .n{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:15px}
+.card.warn h2 .n{background:var(--honey);color:#2a1a00}
+.card ol,.card ul{margin:6px 0 0;padding-left:22px}
+.card li{margin:4px 0}
+.when{display:inline-block;font-size:13px;font-weight:900;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:2px 10px;margin-bottom:6px}
+.card.warn .when{color:#7a4a00;background:var(--honey-soft)}
+b.k{font-weight:900}
+.en{font-size:13px;color:var(--muted)}
+code{font-family:ui-monospace,Menlo,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14px}
+.note{background:var(--honey-soft);border-radius:14px;padding:14px 16px;font-size:15px}
+.note p{margin:0}
+.note p+p{margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{border-top:1px solid var(--line);padding:7px 4px;vertical-align:top}
+td:first-child{font-weight:700;width:46%}
+.back{display:inline-block;align-self:flex-start;background:var(--accent);color:#fff;text-decoration:none;font-weight:900;border-radius:999px;padding:10px 20px}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">‹ 回到遊戲</a>
+  <h1>家長使用說明</h1>
+  <p class="lead">小孩的進度、蜂蜜、星星都存在這台 iPad 裡。照下面三步做，資料就不容易不見。</p>
+
+  <section class="card">
+    <h2><span class="n">1</span>第一天：先加到主畫面</h2>
+    <span class="when">小孩開始玩之前做一次</span>
+    <ol>
+      <li>用 <b class="k">Safari</b> 打開遊戲網址（不要用 Chrome、LINE 裡的瀏覽器或無痕模式）。</li>
+      <li>點網址列旁的<b class="k">分享</b>圖示（方框加向上箭頭）。<br><span class="en">英文介面：Share</span></li>
+      <li>往下滑，點<b class="k">加入主畫面</b>，再點<b class="k">加入</b>。<br><span class="en">英文介面：Add to Home Screen → Add。如果找不到，滑到最下面點 Edit Actions… 把它打開。</span></li>
+      <li>之後都<b class="k">從主畫面的圖示打開</b>。打開時沒有網址列、整個是全螢幕，就是對的。</li>
+    </ol>
+    <p class="lead" style="margin-top:8px">為什麼：從 Safari 網址開，久沒玩資料可能會被清掉；從主畫面圖示開比較不會。</p>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">2</span>偶爾：備份一次</h2>
+    <span class="when">建議每週一次，按鈕變紅時一定要做</span>
+    <ol>
+      <li>在遊戲地圖最下面，點<b class="k">💾 備份／還原進度</b>。</li>
+      <li>點<b class="k">📤 傳到 LINE／備忘錄</b>，傳給自己（自己的聊天室或 Keep 都可以）。</li>
+      <li>確認 LINE 裡收到一長串以 <code>XXHL1.</code> 開頭的文字。這串就是存檔。</li>
+    </ol>
+    <p class="lead" style="margin-top:8px">超過 7 天沒備份，按鈕下方的小字會變紅提醒。</p>
+  </section>
+
+  <section class="card warn">
+    <h2><span class="n">3</span>萬一：資料不見了</h2>
+    <span class="when">換 iPad、誤刪圖示、清除了網站資料時</span>
+    <ol>
+      <li>打開 LINE，找到上次傳的那串 <code>XXHL1.</code> 開頭的文字，<b class="k">長按 → 複製</b>。<br><span class="en">英文介面：Copy</span></li>
+      <li>回到遊戲，點<b class="k">💾 備份／還原進度</b>。</li>
+      <li>在「還原進度」的格子裡<b class="k">長按 → 貼上</b>，點<b class="k">讀取存檔碼</b>。<br><span class="en">英文介面：Paste</span></li>
+      <li>畫面會顯示存檔裡和現在的蜂蜜、朋友、通過幾課，確認沒錯再點<b class="k">確定還原</b>。</li>
+    </ol>
+  </section>
+
+  <div class="note">
+    <p><b>會讓資料不見的情況：</b>清除 Safari 的瀏覽記錄與網站資料、用無痕模式、刪掉主畫面圖示、換成別的瀏覽器開。</p>
+    <p><b>關於題目：</b>生字與圈詞是教育部教育百科的官方清單；注音、提示和例句是另外編寫的，已和教育部辭典資料比對過，但仍可能有錯，建議對照課本看一下，發現錯誤請告訴提供這個遊戲的人。</p>
+  </div>
+
+  <section class="card">
+    <h2>遊戲怎麼玩（給大人參考）</h2>
+    <table>
+      <tr><td>每一課的小路</td><td>答對一題往前一步，走完打開寶箱拿徽章。只會前進，答錯不扣東西。</td></tr>
+      <tr><td>⭐ 複習星星</td><td>過關的課再玩一輪，第一遍一題都沒錯就拿 1 顆，每課最多 3 顆。</td></tr>
+      <tr><td>❤️ 考驗的愛心</td><td>小考驗（第七～九課）、大考驗（第七～十二課）各 3 顆愛心，答錯少一顆。星星越多，可以多帶最多 3 顆。</td></tr>
+      <tr><td>🍯 蜂蜜商店</td><td>用蜂蜜邀請森林朋友，朋友會住進地圖，也可以換牠走小路。</td></tr>
+    </table>
+  </section>
+
+  <a class="back" href="./">‹ 回到遊戲</a>
+</div>
+</body>
+</html>
